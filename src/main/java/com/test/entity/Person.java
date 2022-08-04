@@ -1,9 +1,12 @@
 package com.test.entity;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class Person {
 
     private String name;
 
+    @Value("#{20-2}")
     private int age;
 
     public Person() {
